@@ -1,0 +1,50 @@
+body
+    background-color: #222
+    color: #00d8ff
+    font-size: 18px
+
+hr
+    border-color: #00d8ff
+.btn-default
+    color: #222
+.one
+    margin-top: 10px
+    margin-bottom: 10px
+p
+.header
+    text-align: center
+    input
+        padding-top: 6px
+        width: 80%
+        display: inline-block
+    img
+        max-height: 100px
+        float: left
+    h1
+        line-height: 74px
+.content
+    margin-top: 30px
+    ul
+        list-style: none
+        padding-left: 0px
+        .todo_item
+            line-height: 30px
+            border-bottom: 1px solid #00d8ff
+            margin-bottom: 10px
+            // &:last-child
+            //     border-bottom: 0px
+            // &:first-child
+            //     border-bottom: 1px solid #00d8ff
+            .checkbox, .input_item, .del_item
+                display: inline-block
+            .checkbox
+                input
+                    margin-top: 0px
+            .del_item
+                float: right
+                text-align: center
+                visibility: hidden
+                cursor: pointer
+            &:hover
+                .del_item
+                    visibility: visible

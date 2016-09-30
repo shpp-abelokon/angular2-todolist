@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Angular QuickStart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+
+    <script>
+        System.import('app').catch(function(err) {
+            console.error(err);
+        });
+    </script>
+    <style media="screen">
+        body {
+            background-color: #222;
+            color: #00d8ff;
+            font-size: 18px;
+        }
+
+        hr {
+            border-color: #00d8ff;
+        }
+
+        .btn-default {
+            color: #222;
+        }
+
+        .one {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .header input {
+            padding-top: 6px;
+            width: 80%;
+            display: inline-block;
+        }
+
+        .header img {
+            max-height: 100px;
+            float: left;
+        }
+
+        .header h1 {
+            line-height: 74px;
+        }
+    </style>
+</head>
+<!-- 3. Display the application -->
+
+<body>
+    <section class="one">
+        <todo-app>Loading...</todo-app>
+    </section>
+</body>
+
+</html>

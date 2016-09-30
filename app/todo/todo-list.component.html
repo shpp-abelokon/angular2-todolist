@@ -1,0 +1,18 @@
+
+<div id="content" class="content col-lg-6 col-lg-offset-3" *ngIf="todos.length > 0">
+<!-- <div id="content" class="content col-lg-6 col-lg-offset-3" > -->
+    <ul>
+        <li class="todo_item" *ngFor="let i of todos">
+        <!-- <li class="todo_item" > -->
+            <div class="checkbox">
+                <input type="checkbox" value="">
+            </div>
+            <div class="input_item">
+                <span>{{ i }}</span>
+            </div>
+            <div class="del_item">
+                <span>X</span>
+            </div>
+        </li>
+    </ul>
+</div>

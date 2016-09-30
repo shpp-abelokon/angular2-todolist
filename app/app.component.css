@@ -1,0 +1,47 @@
+body {
+  background-color: #222;
+  color: #00d8ff;
+  font-size: 18px; }
+
+hr {
+  border-color: #00d8ff; }
+
+.btn-default {
+  color: #222; }
+
+.one {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.header {
+  text-align: center; }
+  .header input {
+    padding-top: 6px;
+    width: 80%;
+    display: inline-block; }
+  .header img {
+    max-height: 100px;
+    float: left; }
+  .header h1 {
+    line-height: 74px; }
+
+.content {
+  margin-top: 30px; }
+  .content ul {
+    list-style: none;
+    padding-left: 0px; }
+    .content ul .todo_item {
+      line-height: 30px;
+      border-bottom: 1px solid #00d8ff;
+      margin-bottom: 10px; }
+      .content ul .todo_item .checkbox, .content ul .todo_item .input_item, .content ul .todo_item .del_item {
+        display: inline-block; }
+      .content ul .todo_item .checkbox input {
+        margin-top: 0px; }
+      .content ul .todo_item .del_item {
+        float: right;
+        text-align: center;
+        visibility: hidden;
+        cursor: pointer; }
+      .content ul .todo_item:hover .del_item {
+        visibility: visible; }

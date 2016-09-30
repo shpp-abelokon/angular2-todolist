@@ -1,0 +1,25 @@
+<div id="main" class="container">
+    <div id="header_input" class=" header col-lg-6 col-lg-offset-3">
+        <img src="http://findicons.com/files/icons/2773/pictonic_free/512/angularjs.png" alt="">
+        <h1>{{ title }}</h1>
+        <hr>
+        <input type="text" class="form-control" placeholder="Text input" #titleInput>
+        <button type="submit" class="btn btn-default" (click)="add_todo(titleInput)" (keyup)="add_todo($event)">add todo</button>
+    </div>
+    <todo-list [todos]="todos"></todo-list>
+    <!-- <div id="content" class="content col-lg-6 col-lg-offset-3" *ngIf="todos.length > 0">
+        <ul>
+            <li class="todo_item" *ngFor="let i of todos">
+                <div class="checkbox">
+                    <input type="checkbox" value="">
+                </div>
+                <div class="input_item">
+                    <span>{{ i }}</span>
+                </div>
+                <div class="del_item">
+                    <span>X</span>
+                </div>
+            </li>
+        </ul>
+    </div> -->
+</div>
